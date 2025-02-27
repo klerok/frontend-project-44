@@ -21,5 +21,6 @@ export const basisOfTheGames = (description, game) => {
     }
     console.log('Correct!');
   }
-  console.log(`Congratulations, ${userName}!`);
+  const finish = `Congratulations, ${userName}!`;
+  return finish;
 };
