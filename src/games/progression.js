@@ -15,7 +15,7 @@ const game = () => {
     const genProgression = getProgression(getRandomNum(), getRandomNum(1, 5));
     const hiddenNum = getRandomNum(0, genProgression.length - 1);
     const progressionResult = [];
-    for (let i = 0; i < genProgression.length; i++) {
+    for (let i = 0; i < genProgression.length; i += 1) {
         if (i === hiddenNum) {
             progressionResult.push('..');
         } else {
