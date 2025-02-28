@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import name from './cli.js'
+import name from './cli.js';
 
-export default function basisOfTheGames (description, game) {
+export default function basisOfTheGames(description, game) {
   const roundsCount = 3;
   console.log('Welcome to the Brain Games!');
 
@@ -22,4 +22,4 @@ export default function basisOfTheGames (description, game) {
     }
   }
   console.log(`Congratulations, ${userName}!`);
-};
+}
