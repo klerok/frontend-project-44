@@ -15,12 +15,13 @@ export const basisOfTheGames = (description, game) => {
     const [question, answer] = game();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (userAnswer !== answer) {
+    if (userAnswer === answer) {
+      console.log('Correct!');
+    } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
-      return `Let's try again, ${userName}!`;
+      console.log(`Let's try again, ${userName}!`);
+      return;
     }
-    console.log('Correct!');
   }
-  const finish = `Congratulations, ${userName}!`;
-  return finish;
+  console.log(`Congratulations, ${userName}!`);
 };
