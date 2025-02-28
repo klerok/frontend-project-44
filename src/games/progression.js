@@ -5,10 +5,10 @@ const description = 'What number is missing in the progression?';
 const getProgression = (start, diff, size) => {
   const progressionArray = [];
   for (let i = 0; i < size; i += 1) {
-      progressionArray.push(start + diff * i);
-  };
-  return progressionArray;    
-}
+    progressionArray.push(start + diff * i);
+  }
+  return progressionArray;
+};
 
 const game = () => {
   const genProgression = getProgression(getRandomNum(), getRandomNum(1, 5), getRandomNum(5, 10));
