@@ -2,17 +2,16 @@ import { getRandomNum, basisOfTheGames } from '../index.js';
 
 const description = 'What number is missing in the progression?';
 
-const getProgression = (start, diff) => {
-  const progressionLength = 10;
+const getProgression = (start, diff, size) => {
   const progressionArray = [];
-  for (let i = 0; i < progressionLength; i += 1) {
-    progressionArray.push(start + diff * i);
-  }
-  return progressionArray;
-};
+  for (let i = 0; i < size; i += 1) {
+      progressionArray.push(start + diff * i);
+  };
+  return progressionArray;    
+}
 
 const game = () => {
-  const genProgression = getProgression(getRandomNum(), getRandomNum(1, 5));
+  const genProgression = getProgression(getRandomNum(), getRandomNum(1, 5), getRandomNum(5, 10));
   const hiddenNum = getRandomNum(0, genProgression.length - 1);
   const progressionResult = [];
   for (let i = 0; i < genProgression.length; i += 1) {
@@ -23,7 +22,7 @@ const game = () => {
     }
   }
   const question = progressionResult.join(' ');
-  const answer = `${progressionResult[hiddenNum]}`;
+  const answer = `${genProgression[hiddenNum]}`;
   return [question, answer];
 };
 
