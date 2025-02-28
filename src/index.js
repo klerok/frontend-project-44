@@ -1,6 +1,9 @@
 import readlineSync from 'readline-sync';
 
-export const getRandomNum = (min = 0, max = 100) => Math.floor(Math.random() * (max - min + 1)) + min;
+export const getRandomNum = (min = 0, max = 100) => {
+  const randomInt = Math.floor(Math.random() * (max - min + 1)) + min;
+  return randomInt;
+};
 
 export const basisOfTheGames = (description, game) => {
   const roundsCount = 3;
