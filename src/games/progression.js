@@ -12,7 +12,11 @@ const getProgression = (start, diff, size) => {
 };
 
 const game = () => {
-  const genProgression = getProgression(getRandomNum(), getRandomNum(1, 5), getRandomNum(5, 10));
+  const start = getRandomNum();
+  const diff = getRandomNum(1, 5);
+  const size = getRandomNum(5, 10);
+
+  const genProgression = getProgression(start, diff, size);
   const hiddenNum = getRandomNum(0, genProgression.length - 1);
   const progressionResult = [];
   for (let i = 0; i < genProgression.length; i += 1) {
