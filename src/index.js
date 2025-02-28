@@ -1,15 +1,10 @@
 import readlineSync from 'readline-sync';
+import name from './cli.js'
 
-export const getRandomNum = (min = 0, max = 100) => {
-  const randomInt = Math.floor(Math.random() * (max - min + 1)) + min;
-  return randomInt;
-};
-
-export const basisOfTheGames = (description, game) => {
+export default function basisOfTheGames (description, game) {
   const roundsCount = 3;
   console.log('Welcome to the Brain Games!');
 
-  const name = () => readlineSync.question('May I have your name? ');
   const userName = name();
   console.log(`Hello, ${userName}`);
 
