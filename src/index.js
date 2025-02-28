@@ -1,8 +1,9 @@
 import readlineSync from 'readline-sync';
 import name from './cli.js';
 
+const roundsCount = 3;
+
 export default function basisOfTheGames(description, game) {
-  const roundsCount = 3;
   console.log('Welcome to the Brain Games!');
 
   const userName = name();
