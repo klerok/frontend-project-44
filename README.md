@@ -33,6 +33,15 @@ Congratulations, Maksim!
 # Installation:
 Минимальные требования: node.js : 22+
 
+Скопируйте репозиторий командой:
+```
+git clone https://github.com/klerok/frontend-project-44.git
+```
+или
+```
+git clone git@github.com:klerok/frontend-project-44.git
+```
+
 Для установки проекта выполните команду:
 ```
 make install
