@@ -2,7 +2,7 @@
 [![Actions Status](https://github.com/klerok/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/klerok/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/36910958775d0a3669f4/maintainability)](https://codeclimate.com/github/klerok/frontend-project-44/maintainability)
 
-# Brain-games
+# Игры разума
 [![asciicast](https://asciinema.org/a/bSEayjgsy75d8HbBl8jSggpGq.svg)](https://asciinema.org/a/bSEayjgsy75d8HbBl8jSggpGq)
 «Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. Игры:
 
@@ -16,9 +16,9 @@
 ```
 brain-progression
 Welcome to the Brain Game!
-What number is missing in the progression?
 May I have your name? Maksim
 Hello, Maksim!
+What number is missing in the progression?
 Question: 14 .. 18 20 22 24 26 28
 Your answer: 16 # Пользователь вводит ответ
 Correct!
@@ -29,6 +29,28 @@ Question: 12 15 18 21 .. 27 30 33
 Your answer: 24 # Пользователь вводит ответ
 Correct!
 Congratulations, Maksim!
+```
+# Installation:
+Минимальные требования: node.js : 22+
+
+Для установки проекта выполните команду:
+```
+make install
+```
+## Локальная установка пакета.
+Из директории проекта запустите команды:
+```
+make publish
+npm link
+```
+После установки пакета, игры можно запускать командами:
+```
+# Каждая команда отвечает за запуск отдельной игры.
+brain-even
+brain-calc
+brain-gcd
+brain-progression
+brain-prime
 ```
 
 # Игра: "Проверка на чётность"
